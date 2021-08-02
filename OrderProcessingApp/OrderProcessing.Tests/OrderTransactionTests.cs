@@ -36,6 +36,7 @@ namespace BackEnd.Tests
 
         }
 
+        //Test for Single Product
         [TestMethod()]
         // Single Order
         public void AddToCartTest_Success01()
@@ -51,6 +52,7 @@ namespace BackEnd.Tests
             Assert.AreEqual(1, trans.Order.Count);
         }
 
+        //Test for Mutiple products
         [TestMethod()]
         // Multiple Orders
         public void AddToCartTest_Success02()
@@ -79,16 +81,129 @@ namespace BackEnd.Tests
             Assert.ThrowsException<ApplicationException>(() => trans.AddToCart(null, 0));
         }
 
+
+        //Test for MutipleProducts (Physical Product and Book)
         [TestMethod()]
-        public void CheckOutTest_Success01()
+        public void CheckOutTest_MutipleProducts_Success01()
         {
-            Assert.Fail();
+            // Arrange
+            OrderTransaction ot = new OrderTransaction();
+            ot.AddToCart(this.products[0], 1);
+            ot.AddToCart(this.products[1], 1);
+
+            // Act
+            string msg = ot.CheckOut();
+
+            // Assert
+            Assert.IsNotNull(msg);
+            Console.WriteLine(msg);
+        }
+
+        //Test for MutipleProducts (New Membership and Upgrade Membership)
+        [TestMethod()]
+        public void CheckOutTest_MutipleProducts_Success02()
+        {
+            // Arrange
+            OrderTransaction ot = new OrderTransaction();
+            ot.AddToCart(this.products[2], 1);
+            ot.AddToCart(this.products[3], 1);
+
+            // Act
+            string msg = ot.CheckOut();
+
+            // Assert
+            Assert.IsNotNull(msg);
+            Console.WriteLine(msg);
+        }
+
+        //Test for PhysicalProduct Only 
+        [TestMethod()]
+        public void CheckOutTest_PhysicalProduct_Success()
+        {
+            // Arrange
+            OrderTransaction ot = new OrderTransaction();
+            ot.AddToCart(this.products[0], 1);
+
+            // Act
+            string msg = ot.CheckOut();
+
+            // Assert
+            Assert.IsNotNull(msg);
+            Console.WriteLine(msg);
+        }
+
+        //Test for Book Only
+        [TestMethod()]
+        public void CheckOutTest_Book_Success()
+        {
+            // Arrange
+            OrderTransaction ot = new OrderTransaction();
+            ot.AddToCart(this.products[1], 1);
+
+            // Act
+            string msg = ot.CheckOut();
+
+            // Assert
+            Assert.IsNotNull(msg);
+            Console.WriteLine(msg);
+        }
+
+        //Test for New Membership Only
+        [TestMethod()]
+        public void CheckOutTest_NewMembership_Success()
+        {
+            // Arrange
+            OrderTransaction ot = new OrderTransaction();
+            ot.AddToCart(this.products[2], 1);
+
+            // Act
+            string msg = ot.CheckOut();
+
+            // Assert
+            Assert.IsNotNull(msg);
+            Console.WriteLine(msg);
+        }
+
+        //Test for Upgrade Membership only
+        [TestMethod()]
+        public void CheckOutTest_UpgradeMembership_Success()
+        {
+            // Arrange
+            OrderTransaction ot = new OrderTransaction();
+            ot.AddToCart(this.products[3], 1);
+
+            // Act
+            string msg = ot.CheckOut();
+
+            // Assert
+            Assert.IsNotNull(msg);
+            Console.WriteLine(msg);
+        }
+
+        //Test for Video only
+        [TestMethod()]
+        public void CheckOutTest_Video_Success()
+        {
+            // Arrange
+            OrderTransaction ot = new OrderTransaction();
+            ot.AddToCart(this.products[4], 1);
+
+            // Act
+            string msg = ot.CheckOut();
+
+            // Assert
+            Assert.IsNotNull(msg);
+            Console.WriteLine(msg);
         }
 
         [TestMethod()]
         public void CheckOutTest_Fail01()
         {
-            Assert.Fail();
+            // Arrange
+            OrderTransaction trans = new OrderTransaction();
+
+            // Act & Assert
+            Assert.ThrowsException<ApplicationException>(() => trans.CheckOut());
         }
     }
 }

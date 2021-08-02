@@ -10,10 +10,15 @@ namespace BackEnd
     {
         private Dictionary<int, Order> orders;
 
+        public Dictionary<int, Order> Order
+        {
+            get { return this.orders; }
+        }
+
 
         public OrderTransaction()
-        { 
-
+        {
+            this.orders = new Dictionary<int, Order>();
         }
 
         /// <summary>

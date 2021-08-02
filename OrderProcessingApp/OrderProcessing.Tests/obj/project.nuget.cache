@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lIVxKD/beeCfVvGVHn9vTuX8rSHSBd/FhdPKOA9q5UyngFZwquRBg4dhPWz1FODi4pRnkg68Mi9fZ7OI7jNFRw==",
+  "dgSpecHash": "2x2sNb8LgZrQxzFUyhSII9CIgHqhBaGnWxPNn/wOO+ixQIT8YoiI7OnAvVeBVEDZskA1ajkyRMsesU4lJ3QODw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Alex\\Documents\\GitHub\\Business_Rules\\OrderProcessingApp\\OrderProcessing.Tests\\OrderProcessing.Tests.csproj",
   "expectedPackageFiles": [

@@ -8,5 +8,20 @@ namespace BackEnd
 {
     public class OrderTransaction
     {
+        public OrderTransaction()
+        { 
+
+        }
+
+        public void AddToCart()
+        {
+
+        }
+
+        public string CheckOut()
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

@@ -1,0 +1,12 @@
+C:\Users\Alex\Documents\GitHub\Business_Rules\OrderProcessingApp\BackEnd\bin\Debug\net5.0\BackEnd.deps.json
+C:\Users\Alex\Documents\GitHub\Business_Rules\OrderProcessingApp\BackEnd\bin\Debug\net5.0\BackEnd.dll
+C:\Users\Alex\Documents\GitHub\Business_Rules\OrderProcessingApp\BackEnd\bin\Debug\net5.0\ref\BackEnd.dll
+C:\Users\Alex\Documents\GitHub\Business_Rules\OrderProcessingApp\BackEnd\bin\Debug\net5.0\BackEnd.pdb
+C:\Users\Alex\Documents\GitHub\Business_Rules\OrderProcessingApp\BackEnd\obj\Debug\net5.0\BackEnd.csproj.AssemblyReference.cache
+C:\Users\Alex\Documents\GitHub\Business_Rules\OrderProcessingApp\BackEnd\obj\Debug\net5.0\BackEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\Documents\GitHub\Business_Rules\OrderProcessingApp\BackEnd\obj\Debug\net5.0\BackEnd.AssemblyInfoInputs.cache
+C:\Users\Alex\Documents\GitHub\Business_Rules\OrderProcessingApp\BackEnd\obj\Debug\net5.0\BackEnd.AssemblyInfo.cs
+C:\Users\Alex\Documents\GitHub\Business_Rules\OrderProcessingApp\BackEnd\obj\Debug\net5.0\BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\GitHub\Business_Rules\OrderProcessingApp\BackEnd\obj\Debug\net5.0\BackEnd.dll
+C:\Users\Alex\Documents\GitHub\Business_Rules\OrderProcessingApp\BackEnd\obj\Debug\net5.0\ref\BackEnd.dll
+C:\Users\Alex\Documents\GitHub\Business_Rules\OrderProcessingApp\BackEnd\obj\Debug\net5.0\BackEnd.pdb
